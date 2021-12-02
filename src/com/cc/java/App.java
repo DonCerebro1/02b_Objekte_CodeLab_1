@@ -5,25 +5,25 @@ import java.io.Console;
 public class App {
     
     public static void main(String[] args) {
-        // Account bankAcc = new Account(10000, "Konto  ");
-        // Account bankAccTwo = new Account(10000, "Konto 2");
-        // Account bankAccThree = new Account(10000,"Konto 3");
+        Account bankAcc = new Account(10000, "Konto  ");
+        Account bankAccTwo = new Account(10000, "Konto 2");
+        Account bankAccThree = new Account(10000,"Konto 3");
 
-        // bankAcc.getBankInformation();
-        // bankAccTwo.getBankInformation();
-        // bankAccThree.getBankInformation();
+        output("-----------Current Balance----------\n");
 
-        // output("-----------------------------");
+        bankAcc.getBankInformation();
+        bankAccTwo.getBankInformation();
+        bankAccThree.getBankInformation();
 
-        // bankAcc.setNewBalance(20000);
-        // bankAccTwo.setNewBalance(30000);
-        // bankAccThree.setNewBalance(100000);
+        output("\n-----------New Balance----------\n");
 
-        // bankAcc.getBankInformation();
-        // bankAccTwo.getBankInformation();
-        // bankAccThree.getBankInformation();
+        bankAcc.setNewBalance(2);
+        bankAccTwo.setNewBalance(3);
+        bankAccThree.setNewBalance(10);
 
-        output("----------BankAccount-------------------");
+       
+
+        output("\n----------BankAccount----------\n");
 
         BankAccount acc = new BankAccount(10000);
         acc.checkBalance();

@@ -12,7 +12,7 @@ public class Account {
     }
 
     public void getBankInformation(){
-        System.out.println(bankName + " der aktuelle Kontostand beträgt: " + currentBalance);
+        System.out.println(bankName + ": der aktuelle Kontostand beträgt: " + currentBalance);
 
     }
 
@@ -30,7 +30,8 @@ public class Account {
 
     public void setNewBalance(int newBalance) {
         this.newBalance = newBalance;
-        currentBalance =  newBalance;
+        newBalance =  newBalance * currentBalance;
+        System.out.println(bankName + ": Neuer Kontostand: " + newBalance);
     }
 
     
