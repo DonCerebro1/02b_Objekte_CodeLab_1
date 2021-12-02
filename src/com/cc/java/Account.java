@@ -29,8 +29,8 @@ public class Account {
     }
 
     public void setNewBalance(int newBalance) {
-        this.newBalance = currentBalance;
-        currentBalance = currentBalance + newBalance;
+        this.newBalance = newBalance;
+        currentBalance =  newBalance;
     }
 
     

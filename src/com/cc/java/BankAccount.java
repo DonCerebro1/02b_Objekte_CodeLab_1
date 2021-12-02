@@ -22,7 +22,7 @@ public int withDraw(int amountToWithDraw){
     return amountToWithDraw;
 }
 
-// Calling the toString() mehtod as a function of the Integer variable
+// int --> String
 public String toString(){
     return "Der aktuelle Kontostand lautet: " + balance + " Euro";
 }
