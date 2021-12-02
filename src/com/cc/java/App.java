@@ -23,11 +23,17 @@ public class App {
         bankAccTwo.getBankInformation();
         bankAccThree.getBankInformation();
 
+        output("----------BankAccount-------------------");
+
+        BankAccount acc = new BankAccount(10000);
+        acc.checkBalance();
+        acc.withDraw(5000);
+        acc.checkBalance();
+        acc.desposit(15000);
+        acc.checkBalance();
+        System.out.println(acc);
+
     }
-
-
-
-
 
     static void output(String outputStr){
         System.out.println(outputStr);

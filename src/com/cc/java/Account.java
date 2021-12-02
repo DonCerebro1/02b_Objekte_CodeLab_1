@@ -22,6 +22,7 @@ public class Account {
 
     public void setCurrentBalance(int currentBalance) {
         this.currentBalance = currentBalance;
+        currentBalance = 10000;
     }
 
     public int getNewBalance() {
