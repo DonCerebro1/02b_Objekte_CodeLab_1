@@ -30,8 +30,8 @@ public class Account {
 
     public void setNewBalance(int newBalance) {
         this.newBalance = newBalance;
-        newBalance =  newBalance * currentBalance;
-        System.out.println(bankName + ": Neuer Kontostand: " + newBalance);
+        currentBalance =  newBalance * currentBalance;
+        System.out.println(bankName + ": Neuer Kontostand: " + currentBalance);
     }
 
     

@@ -8,7 +8,7 @@ public BankAccount(int initialBalance) {
 }
   
 public void checkBalance(){
-    System.out.println("Dein Kontostand lautet: " + balance + " Euro");
+    System.out.println("Ihr Kontostand lautet: " + balance + " Euro");
 }
 
 public void desposit(int amountToDesposit){
